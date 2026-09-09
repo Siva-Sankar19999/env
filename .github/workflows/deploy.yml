@@ -23,6 +23,6 @@ jobs:
     needs: test
     runs-on: ubuntu-latest
     steps:
-      - name: Print Staging Environment MongoDB UserName
+      - name: Print Staging Environment MongoDB UserNames
         run: |        
           echo "${{ vars.MONGODB_USERNAME}}"
