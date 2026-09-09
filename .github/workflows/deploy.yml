@@ -13,7 +13,6 @@ jobs:
   test:
     env: 
       MONGODB_CLUSTER_ADDRESS: test.wnzd5ah.mongodb.net
-      MONGODB_PASSWORD: SivaAuto@111
       MONGODB_USERNAME: sivasankar
       PORT: 8080
 
@@ -34,6 +33,7 @@ jobs:
       - name: Output information
         run: |
           echo "${{ env.MONGODB_USERNAME }}"
+          echo "${{ secrets.MONGODB_PASSWORD}}"
 
 
   deploy:
